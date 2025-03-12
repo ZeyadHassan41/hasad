@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasad</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/services/service-4/assets/css/service-4.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="Logo" width="48">
+            </a>
+
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Services Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="#">________</a></li>
+                            <li><a class="dropdown-item" href="#">________</a></li>
+                            <li><a class="dropdown-item" href="#">________</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Community Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="communityDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Community
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="communityDropdown">
+                            <li><a class="dropdown-item" href="#">Forums</a></li>
+                            <li><a class="dropdown-item" href="#">Events</a></li>
+                            <li><a class="dropdown-item" href="#">Blog</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- FAQ -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FAQ</a>
+                    </li>
+
+                    <!-- Join Button -->
+                    <li class="nav-item">
+                        <a class="btn btn-primary ms-2" href="#"><i class="fa-solid fa-plus"></i> Join</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Start landing -->
+    <div class="landing">
+        <div class="overlay"></div> <!-- Gradient overlay -->
+        <div class="landing-content">
+            <img src="img/Egypt.png" alt="Landing Image">
+            <div class="text-section">
+                <h3>Efficient & Sustainable Agri-Logistics for Egypt’s Farmers</h3>
+                <p>Reducing costs, saving environment, and connecting farmers to markets faster.</p>
+            </div>
+        </div>
+    </div>
+    <!-- End landing -->
+
+    <!-- Services Section -->
+    <div class="container">
+        <div class="services overflow-hidden">
+            <div class="row gy-4 gy-xl-0">
+                <!-- Shared Shipping Card -->
+                <div class="col-12 col-sm-6 col-xl-3">
+                    <div class="card border-0 border-bottom border-primary shadow-sm">
+                        <div class="card-body text-center p-4 p-xxl-5">
+                            <svg width="80" height="80" viewBox="0 0 80 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M34.0086 1.61093C35.8307 0.560918 37.8969 0.00817871 40 0.00817871C42.1032 0.00817871 44.1695 0.560964 45.9917 1.61106L46 1.61587L74 17.6158C75.4799 18.4703 76.7562 19.6285 77.7476 21.0093C77.9891 21.2508 78.2034 21.5275 78.3825 21.8371C78.5368 22.1039 78.6569 22.3811 78.7441 22.6635C79.5668 24.3173 79.9981 26.142 80 27.9959V60.0041C79.9978 62.1084 79.4423 64.1752 78.3892 65.9971C77.3361 67.819 75.8224 69.3319 74 70.3841L73.9846 70.3929L46 86.3841L45.9928 86.3882C44.7239 87.1196 43.3367 87.6099 41.901 87.8402C41.3356 88.1463 40.6881 88.32 40 88.32C39.3119 88.32 38.6644 88.1463 38.099 87.8402C36.6634 87.6099 35.2762 87.1197 34.0074 86.3884L34 86.3841L6.01544 70.3929L6 70.3841C4.17758 69.3319 2.66388 67.819 1.61077 65.9971C0.557659 64.1752 0.00216055 62.1084 0 60.0041V27.9959C0.00190367 26.1417 0.433386 24.3167 1.25633 22.6627C1.3435 22.3805 1.46348 22.1036 1.61765 21.8371C1.79664 21.5277 2.01074 21.2512 2.25199 21.0099C3.24346 19.6288 4.51991 18.4704 6 17.6159L6.01542 17.607L34.0086 1.61093ZM44 78.313L70 63.4559L70.0063 63.4522C70.611 63.1016 71.1133 62.5987 71.4631 61.9935C71.8141 61.3863 71.9993 60.6973 72 59.9959V30.1502L44 46.3472V78.313ZM36 46.3472V78.313L10 63.4559L9.99369 63.4522C9.38903 63.1017 8.88674 62.5987 8.53692 61.9935C8.18617 61.3867 8.00102 60.6985 8 59.9976V30.1501L36 46.3472ZM42.0154 8.55295L67.8442 23.3122L40.0001 39.419L12.1559 23.3121L37.9846 8.55295L38 8.54408C38.6081 8.193 39.2979 8.00818 40 8.00818C40.7021 8.00818 41.3919 8.193 42 8.54408L42.0154 8.55295Z" fill="#00FF00"/>
+                            </svg>
+                            <h4 class="mb-4">Shared Shipping</h4>
+                            <p class="mb-4 text-secondary">A shared transport model, allowing multiple farmers to ship together and split transportation costs, making logistics more affordable and accessible.</p>
+                            <a href="#!" class="fw-bold text-decoration-none link-primary">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-3">
+                    <div class="card border-0 border-bottom border-primary shadow-sm">
+                      <div class="card-body text-center p-4 p-xxl-5">
+                        <svg width="80" height="89" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M79.59 353.481l52.954-93.223 43.372 25.052-58.984-102.256L0 183.307l41.677 24.613c0 0-24.854 41.764-30.344 51.38-8.835 15.415-13.369 37.98-3.554 53.67 1.496 2.464 29.706 52.712 52.46 92.188 0.473-17.516 9.406-33.822 19.398-51.678H79.59zM75.531 431.741c1.265 2.178 2.542 4.346 3.74 6.48 5.799 10.034 19.76 23.214 74.035 22.258 11.85-0.221 59.05 0.109 73.132 0.22l0.683-106.151-138.168-0.957C73.342 381.416 60.106 404.994 75.531 431.741zM191.067 3.804h-7.471c-11.552 0-30.004 5.49-56.288 52.987-5.732 10.353-29.618 51.073-36.736 63.198l91.55 53.692 69.976-119.189C235.759 27.052 221.962 3.804 191.067 3.804zM385.764 163.988L444 62.611 401.872 86.41c0 0-23.82-42.458-29.343-51.976-8.923-15.37-26.218-30.553-44.702-29.937-2.839 0.077-60.503-0.616-106.074-0.66 14.909 9.186 24.59 25.052 35.009 42.646l0.044-0.088 54.297 92.54-43.394 25.053H385.764zM434.164 354.141l-107.262 0.77v-50.093l-59.038 102.255 58.664 101.123 0.496-48.377c0 0 48.64 0.605 59.676 0.55 17.78-0.076 39.543-7.404 48.268-23.765 1.353-2.498 30.784-52.118 53.582-91.496-15.36 8.318-33.998 8.748-54.407 9.001L434.164 354.141zM489.935 236.844c-6.072-10.177-29.387-51.182-36.341-63.45l-92.276 52.449 68.226 120.19c31.906-0.408 58.939-0.738 74.386-27.44 1.276-2.212 2.519-4.368 3.774-6.546C513.458 302.056 517.925 283.352 489.935 236.844z" fill="#00FF00"/>
+                        </svg>
+                        <h4 class="mb-4">Recycling & Sustainability</h4>
+                        <p class="mb-4 text-secondary">We help businesses and farms recycle waste materials efficiently, reducing environmental impact by promoting reusable and eco-friendly solutions.</p>
+                        <a href="#!" class="fw-bold text-decoration-none link-primary">
+                          Learn More
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-xl-3">
+                    <div class="card border-2 border-bottom border-primary shadow-sm">
+                      <div class="card-body text-center p-4 p-xxl-5">
+                        <svg width="80" height="89" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M181.75,42.5c-3-13-15-22.5-29-22.5h-105a30.6,30.6,0,0,0-29.5,22.5l-10.5,40c-2,7,1,14,7,18l2,1.5c3,1.5,5.5,3,8.5,3.5V160a20.06,20.06,0,0,0,20,20h23.5a20.06,20.06,0,0,0,20-20V140h27.5v20a20.06,20.06,0,0,0,20,20h19a20.06,20.06,0,0,0,20-20V105.5a22.09,22.09,0,0,0,8-3l2-1.5a16.87,16.87,0,0,0,7-18.5ZM156.25,160h-20V140a20.06,20.06,0,0,0-20-20H88.75a20.06,20.06,0,0,0-20,20v20H45.25V100c6.5-2.5,13.5-1.5,19.5,2a21.07,21.07,0,0,0,24,0,21.07,21.07,0,0,1,24,0,21.07,21.07,0,0,0,24,0,20.87,20.87,0,0,1,19.5-2Zm14.5-74.5a40.69,40.69,0,0,0-46,0,.94.94,0,0,1-1.5,0,40.69,40.69,0,0,0-46,0,.94.94,0,0,1-1.5,0,40.69,40.69,0,0,0-46,0,.94.94,0,0,1-1.5,0l9.5-38c1-4.5,5-7.5,10-7.5h105.5a9.64,9.64,0,0,1,9.5,7.5l9.5,38S171.25,86,170.75,85.5Z"
+                            fill="#00FF00"
+                          />
+                        </svg>              <h4 class="mb-4"> Farm-to-Market</h4>
+                        <p class="mb-4 text-secondary">Direct transportation from farms to markets, helping farmers reach buyers quickly while maintaining the freshness and quality of their produce.</p>
+                        <a href="#!" class="fw-bold text-decoration-none link-primary">
+                          Learn More
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-xl-3">
+                    <div class="card border-0 border-bottom border-primary shadow-sm">
+                      <div class="card-body text-center p-4 p-xxl-5">
+                        <svg width="80" height="89" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M37.602,8c-5.108,0-17.423,0.821-24.812,8.21c-4.765,4.765-5.187,12.211-1.297,17.469l-5.833,5.833l2.828,2.828
+                            l5.833-5.833c2.363,1.748,5.163,2.638,7.969,2.638c3.438,0,6.877-1.312,9.5-3.935c9.5-9.5,8.143-27.143,8.143-27.143
+                            S39.062,8,37.602,8z M12.855,25.71c0-2.52,0.981-4.89,2.763-6.672c4.7-4.7,12.013-6.295,17.323-6.808L14.358,30.814
+                            C13.383,29.305,12.855,27.549,12.855,25.71z M28.962,32.381c-1.782,1.782-4.151,2.763-6.672,2.763
+                            c-1.839,0-3.595-0.528-5.104-1.503l18.578-18.578C35.248,20.388,33.651,27.692,28.962,32.381z" fill="#00FF00"/>
+                        </svg>
+                        <h4 class="mb-4">Organic Waste Composting</h4>
+                        <p class="mb-4 text-secondary">We collect and process crop residues, food waste, and manure into high-quality compost, turning agricultural byproducts into nutrient-rich soil enhancers.</p>
+                        <a href="#!" class="fw-bold text-decoration-none link-primary">
+                          Learn More
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        </div>
+    </div>
+
+    <!-- Why Choose Us Section -->
+    <div class="why">
+        <div class="container px-4 py-5" id="custom-cards">
+            <h2 class="pb-2 border-bottom">Why Choose Us?</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 align-items-stretch g-4 py-5">
+    
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('img/cost.jpg'); background-size: cover; background-position: center;">
+                        <div class="d-flex flex-column h-100 p-5 text-white text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Cost Savings, Affordable transport options.</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('img/eco.jpg'); background-size: cover; background-position: center;">
+                      <div class="d-flex flex-column h-100 p-5 text-white text-shadow-1">
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Eco-Friendly, Reduce waste & carbon footprint.</h3>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('img/truck.jpg'); background-size: cover; background-position: center;">
+                      <div class="d-flex flex-column h-100 p-5 text-shadow-1">
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Reliability, On-time delivery, safe handling.</h3>
+                      </div>
+                    </div>
+                  </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="b-example-divider"></div>
+    <div class="container">
+        <footer class="py-5">
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Pages</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Solutions</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Products & Services</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Dashboard</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Tips & Tricks</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Mobile App</a></li>
+                    </ul>
+                </div>
+            
+                  <div class="col-6 col-md-2 mb-3">
+                    <h5>Services</h5>
+                    <ul class="nav flex-column">
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About Us</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Careers</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Support</a></li>
+                    </ul>
+                  </div> 
+            
+                  <div class="col-6 col-md-2 mb-3">
+                    <h5>legal</h5>
+                    <ul class="nav flex-column">
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Privacy</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Terms</a></li>
+                    </ul>
+                  </div>
+            
+                  <div class="col-md-5 offset-md-1 mb-3">
+                    <form>
+                      <h5>Subscribe to our newsletter</h5>
+                      <p>Monthly digest of what's new and exciting from us.</p>
+                      <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Email address</label>
+                        <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                        <button class="btn btn-primary" type="button">Subscribe</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>&copy; 2024 Hasad, Inc. All rights reserved.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+                    <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+                    <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

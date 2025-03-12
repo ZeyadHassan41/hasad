@@ -27,10 +27,11 @@ body {
     z-index: 1000;
     transition: background 0.3s ease-in-out;
 }
-
+/* 
 .navbar.scrolled {
-    background: var(--sec-color);
-}
+    background: var(--sec-color) !important;
+
+} */
 
 .navbar-brand img {
     width: 80px;

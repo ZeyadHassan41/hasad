@@ -15,11 +15,16 @@
 body {
     font-family: 'Inter', sans-serif;
     scroll-behavior: smooth;
+    background-color: var(--section-background);
+}
+h1, h2, h3, h4, h5, h6{
+    color: #364E51;
+    font-weight: 600;
 }
 
 /* =================== Navbar Styles =================== */
 .navbar {
-    background: transparent !important;
+    background: linear-gradient(to bottom, rgba(54, 78, 81, 0.8), transparent 100% ) !important;
     position: fixed;
     width: 100%;
     top: 0;
@@ -27,11 +32,6 @@ body {
     z-index: 1000;
     transition: background 0.3s ease-in-out;
 }
-/* 
-.navbar.scrolled {
-    background: var(--sec-color) !important;
-
-} */
 
 .navbar-brand img {
     width: 80px;
@@ -66,7 +66,7 @@ body {
 }
 
 /* Navbar Button */
-.navbar .btn-primary {
+ .btn-primary {
     background-color: var(--main-color);
     border: none;
     padding: 8px 16px;
@@ -76,9 +76,10 @@ body {
     color: var(--sec-color) !important;
 }
 
-.navbar .btn-primary:hover {
+.btn-primary:hover {
     background-color: var(--hover-color);
 }
+
 
 /* =================== Landing Section =================== */
 .container {
@@ -153,6 +154,14 @@ body {
     z-index: 2;
 }
 
+.custom-border-bottom {
+    border-bottom: 3px solid #1CDE1C !important;
+}
+
+.services .card a{
+    color: #1CDE1C;
+}
+
 /* =================== Responsive Design =================== */
 @media (max-width: 992px) {
     .landing-content {
@@ -185,11 +194,116 @@ body {
     }
 }
 
+.b-divider {
+    width: 100%;
+    height: 3rem;
+    border-top: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+}
+
 .b-example-divider {
     width: 100%;
     height: 3rem;
-    background-color: rgba(0, 0, 0, .1);
-    border: solid rgba(0, 0, 0, .15);
+    background-color: rgb(92, 127, 132, 0.1);
+    border: solid rgba(92, 127, 132, .15);
     border-width: 1px 0;
     box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.timeline-steps {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+.timeline-steps .timeline-step {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 1rem
+}
+
+@media (min-width:768px) {
+    .timeline-steps .timeline-step:not(:last-child):after {
+        content: "";
+        display: block;
+        border-top: .25rem dotted #3b82f6;
+        width: 3.46rem;
+        position: absolute;
+        left: 7.5rem;
+        top: .3125rem
+    }
+    .timeline-steps .timeline-step:not(:first-child):before {
+        content: "";
+        display: block;
+        border-top: .25rem dotted #3b82f6;
+        width: 3.8125rem;
+        position: absolute;
+        right: 7.5rem;
+        top: .3125rem
+    }
+}
+
+.timeline-steps .timeline-content {
+    width: 10rem;
+    text-align: center
+}
+
+.timeline-steps .timeline-content .inner-circle {
+    border-radius: 1.5rem;
+    height: 1rem;
+    width: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3b82f6
+}
+
+.timeline-steps .timeline-content .inner-circle:before {
+    content: "";
+    background-color: #3b82f6;
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    min-width: 3rem;
+    border-radius: 6.25rem;
+    opacity: .5
+}
+
+.timeline-steps .timeline-step .inner-circle-green {
+    border-radius: 1.5rem;
+    height: 1rem;
+    width: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00FF00
+}
+.timeline-steps .timeline-step .inner-circle-green::before {
+    content: "";
+    background-color: #00FF00;
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    min-width: 3rem;
+    border-radius: 6.25rem;
+    opacity: .4}
+
+.why h3{
+    color: #C9EDFF;
+}
+
+.footer{
+    background-color: #5C7F84;
+}
+
+.footer h5{
+    color: #90B3C6;
+    
+}
+
+.footer li a, p{
+    color: #C9EDFF;
+    
 }
